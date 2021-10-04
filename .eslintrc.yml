@@ -18,7 +18,7 @@ parser: '@typescript-eslint/parser'
 parserOptions:
   ecmaVersion: 2018
   sourceType: module
-  project: tsconfig.json
+  project: ['./tsconfig.eslint.json']
 
 rules:
   '@typescript-eslint/member-delimiter-style': [ error, { multiline: { delimiter: none } } ]
@@ -44,14 +44,12 @@ rules:
     - 2
 
 overrides:
-  - files: [ '**/tests/**' ]
+  - files: ['tests/**']
     rules:
       '@typescript-eslint/no-explicit-any': off
       '@typescript-eslint/no-unsafe-assignment': off
       '@typescript-eslint/no-unsafe-call': off
       '@typescript-eslint/unbound-method': off
       '@typescript-eslint/no-unsafe-return': off
-
-root: true
 
 ignorePatterns: ['.eslintrc.yml']
