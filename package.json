@@ -2,7 +2,7 @@
   "name": "nestjs-ajv-glue",
   "version": "1.0.1",
   "description": "AJV OpenAPI glue for NestJS",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Mateusz Perlak",
   "license": "MIT",
   "scripts": {
