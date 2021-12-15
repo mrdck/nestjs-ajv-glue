@@ -1,12 +1,13 @@
 {
   "name": "nestjs-ajv-glue",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "AJV OpenAPI glue for NestJS",
   "main": "dist/index.js",
   "author": "Mateusz Perlak",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
+    "prepack": "yarn build",
     "build": "tsc",
     "lint": "eslint \"{src,tests}/**/*.ts\" --fix",
     "test": "jest --coverage"
